@@ -18,4 +18,4 @@ Pods/
 Carthage/Build/
 
 # Other
-.DS_Store
+.DS_StoreConfig.xcconfig

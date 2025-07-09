@@ -2,7 +2,7 @@
 //  AlamofireSubscription.swift
 //  RefrigeratorStorage
 //
-//  Created by QMIT_iOS on 7/8/25.
+//  Created by JYJ on 7/8/25.
 //
 
 import Foundation

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		38002C002E1C8C3400B11636 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 38002BFF2E1C8C3400B11636 /* Alamofire */; };
+		380032FA2E1E0AE400B11636 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 380032F92E1E0AE400B11636 /* Config.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		38002BDD2E1C87A100B11636 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +32,25 @@
 		38002BCB2E1C87A000B11636 /* RefrigeratorStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefrigeratorStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38002BDC2E1C87A100B11636 /* RefrigeratorStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38002BE62E1C87A100B11636 /* RefrigeratorStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		380032F92E1E0AE400B11636 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		380032FC2E1E0B9800B11636 /* Exceptions for "RefrigeratorStorage" folder in "RefrigeratorStorage" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 38002BCA2E1C87A000B11636 /* RefrigeratorStorage */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		38002BCD2E1C87A000B11636 /* RefrigeratorStorage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				380032FC2E1E0B9800B11636 /* Exceptions for "RefrigeratorStorage" folder in "RefrigeratorStorage" target */,
+			);
 			path = RefrigeratorStorage;
 			sourceTree = "<group>";
 		};
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38002C002E1C8C3400B11636 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +95,11 @@
 		38002BC22E1C87A000B11636 = {
 			isa = PBXGroup;
 			children = (
+				380032F92E1E0AE400B11636 /* Config.xcconfig */,
 				38002BCD2E1C87A000B11636 /* RefrigeratorStorage */,
 				38002BDF2E1C87A100B11636 /* RefrigeratorStorageTests */,
 				38002BE92E1C87A100B11636 /* RefrigeratorStorageUITests */,
+				38002BFE2E1C8C3400B11636 /* Frameworks */,
 				38002BCC2E1C87A000B11636 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +112,13 @@
 				38002BE62E1C87A100B11636 /* RefrigeratorStorageUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		38002BFE2E1C8C3400B11636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +141,7 @@
 			);
 			name = RefrigeratorStorage;
 			packageProductDependencies = (
+				38002BFF2E1C8C3400B11636 /* Alamofire */,
 			);
 			productName = RefrigeratorStorage;
 			productReference = 38002BCB2E1C87A000B11636 /* RefrigeratorStorage.app */;
@@ -195,6 +225,9 @@
 			);
 			mainGroup = 38002BC22E1C87A000B11636;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				38002BF92E1C89EE00B11636 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 38002BCC2E1C87A000B11636 /* Products */;
 			projectDirPath = "";
@@ -212,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380032FA2E1E0AE400B11636 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +305,7 @@
 /* Begin XCBuildConfiguration section */
 		38002BEE2E1C87A100B11636 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380032F92E1E0AE400B11636 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -332,6 +367,7 @@
 		};
 		38002BEF2E1C87A100B11636 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380032F92E1E0AE400B11636 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -392,8 +428,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RefrigeratorStorage/Preview Content\"";
+				DEVELOPMENT_TEAM = K55Q3Y86JD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RefrigeratorStorage/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -404,7 +442,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -429,8 +467,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RefrigeratorStorage/Preview Content\"";
+				DEVELOPMENT_TEAM = K55Q3Y86JD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RefrigeratorStorage/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -441,7 +481,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -583,6 +623,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38002BF92E1C89EE00B11636 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38002BFF2E1C8C3400B11636 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38002BF92E1C89EE00B11636 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 38002BC32E1C87A000B11636 /* Project object */;
 }

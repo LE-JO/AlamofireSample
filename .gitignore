@@ -1,0 +1,21 @@
+# Xcode
+DerivedData/
+build/
+*.xcworkspace
+xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcconfig
+
+# Swift Package Manager
+/.build
+/Packages
+.swiftpm
+
+# Cocoapods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Other
+.DS_Store

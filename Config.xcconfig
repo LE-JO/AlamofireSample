@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  RefrigeratorStorage
+//
+//  Created by QMIT_iOS on 7/9/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = https:/$()/openapi.foodsafetykorea.go.kr
